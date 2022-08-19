@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="styles/main.css">
+    </head>
+    <body>
+
+        <div class = "pg-wrap">
+            <header class = "header" id = "header">
+                <div class = "nav-top bg-dark-grey ">
+                    <div class = "container text-white py-2 d-flex flex-column align-items-center flex-md-row justify-content-md-between">
+                        <div class = "col-left d-flex flex-column align-items-center flex-sm-row">
+                            <div class = "me-2">
+                                <span class = "me-1 text-green"><i class="fa-solid fa-phone"></i></span>
+                                <span>01-3498348</span>
+                            </div>
+                            <div>
+                                <span class = "me-1 text-green"><i class="fa-solid fa-envelope"></i></span>
+                                <a href = "mailto:teamsinergynepal@gmail.com">teamsinergynepal@gmail.com</a>
+                            </div>
+                        </div>
+                        <div class = "col-right d-flex mt-2 mt-lg-0">
+                            <div class = "d-flex align-items-center me-2">
+                                <div>Banasthali-16, Kathmandu</div>
+                                <ul class = "d-flex nav-social-links ms-2">
+                                    <li class = "mx-1">
+                                        <a href = "#">
+                                            <i class = "fab fa-facebook-f"></i>
+                                        </a>
+                                    </li>
+                                    <li class = "mx-1">
+                                        <a href = "#">
+                                            <i class = "fab fa-twitter"></i>
+                                        </a>
+                                    </li>
+                                    <li class = "mx-1">
+                                        <a href = "#">
+                                            <i class = "fab fa-instagram"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <form class = "position-relative">
+                                <span class = "search-icon">
+                                    <i class="fa-solid fa-magnifying-glass"></i> 
+                                </span>
+                                <div class = "search-box position-absolute">
+                                    <input type = "text" class = "form-control">
+                                    <button type = "submit" class = "btn btn-dark-grey">Search</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                <nav class = "navbar navbar-expand-lg navbar-light py-3">
+                    <div class = "container">
+                        <a class = "navbar-brand" href = "index.html">
+                            <img src = "assets/images/site_logo_f.png" alt = "site logo">
+                        </a>
+                        <button class = "navbar-toggler" type = "button" data-bs-toggle = "collapse" data-bs-target = "#siteNavbar">
+                            <span class = "navbar-toggler-icon"></span>
+                        </button>
+                        <div class = "collapse navbar-collapse" id = "siteNavbar">
+                            <ul class = "navbar-nav mx-auto">
+                                <li class = "nav-item mx-lg-4">
+                                    <a class = "nav-link fw-7 text-uppercase active" href = "index.html">home</a>
+                                </li>
+                                <li class = "nav-item mx-lg-4">
+                                    <a class = "nav-link fw-7 text-uppercase" href = "category.html">categories</a>
+                                </li>
+                                <li class = "nav-item mx-lg-4">
+                                    <a class = "nav-link fw-7 text-uppercase" href = "product.html">products</a>
+                                </li>
+                                <li class = "nav-item mx-lg-4">
+                                    <a class = "nav-link fw-7 text-uppercase" href = "blog.html">blog</a>
+                                </li>
+                                <li class = "nav-item mx-lg-4">
+                                    <a class = "nav-link fw-7 text-uppercase" href = "contact.html">contact us</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+
+                <div class = "header-content">
+                    <div class = "home-slider owl-carousel owl-theme">
+                        <div class = "home-slider-item img-cover">
+                            <img src = "assets/images/home_pg/banner_slide_1.jpeg" alt = "">
+                        </div>
+                        <div class = "home-slider-item img-cover">
+                            <img src = "assets/images/home_pg/banner_slide_2.jpeg" alt = "">
+                        </div>
+                        <div class = "home-slider-item img-cover">
+                            <img src = "assets/images/home_pg/banner_slide_3.jpeg" alt = "">
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+            <main>
+                <!-- about section -->
+                <section class = "about bg-light-grey section-py" id = "about">
+                    <div class = "container">
+                        <div class  = "about-content row bg-white py-5 px-3 align-items-start gy-4 gy-lg-0">
+                            <div class = "section-title mb-4 col-12 text-center">
+                                <h3>About Us</h3>
+                                <div class = "d-flex align-items-center justify-content-center mt-2 section-line">
+                                    <div class = "line"></div>
+                                    <span><i class="fa-solid fa-asterisk"></i></span>
+                                    <div class = "line"></div>
+                                </div>
+                            </div>
+                            <div class = "col-left col-lg-6">
+                                <img src = "assets/images/home_pg/about_sec_img.jpg" alt = "">
+                            </div>
+                            <div class = "col-right col-lg-6">
+                                <p class = "text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis, fugiat nostrum. Aperiam reiciendis corporis sunt animi totam modi, sequi error eligendi temporibus nihil qui at consequatur reprehenderit rerum quibusdam eos?</p>
+                                <p class = "text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus deleniti rem corrupti impedit quia. Architecto distinctio pariatur id minus. Consequuntur temporibus error mollitia ut cupiditate eaque assumenda molestias dignissimos ab? Temporibus laborum expedita numquam, modi molestias corrupti ut quo. Quod?</p>
+                                <a href = "#" class = "btn btn-outline-green mt-2">know more</a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- end of about section -->
+
+                <!-- services section -->
+                <section class = "services section-py" id = "services">
+                    <div class = "container">
+                        <div class = "services-content">
+                            <div class = "section-title mb-4 text-center">
+                                <h3>Our Services & Features</h3>
+                                <div class = "d-flex align-items-center justify-content-center mt-2 section-line">
+                                    <div class = "line"></div>
+                                    <span><i class="fa-solid fa-asterisk"></i></span>
+                                    <div class = "line"></div>
+                                </div>
+                            </div>
+                            <div class = "services-items row gy-5 py-4">
+                                <div class = "col-md-6 col-lg-4 col-xl-3">
+                                    <div class = "item box-shadow p-4 h-100 text-center">
+                                        <span class = "item-icon">
+                                            <i class="fa-solid fa-award"></i>
+                                        </span>
+                                        <h5 class = "item-title">Warranty Registration</h5>
+                                        <p class = "text mb-0">Register your Livguard Product online for complete peace of mind anytime, anywhere!</p>
+                                    </div>
+                                </div>
+
+                                <div class = "col-md-6 col-lg-4 col-xl-3">
+                                    <div class = "item box-shadow p-4 h-100 text-center">
+                                        <span class = "item-icon">
+                                            <i class="fa-solid fa-truck"></i>
+                                        </span>
+                                        <h5 class = "item-title">Free Shipping</h5>
+                                        <p class = "text mb-0">Enjoy Free Shipping within 10 business days</p>
+                                    </div>
+                                </div>
+
+                                <div class = "col-md-6 col-lg-4 col-xl-3">
+                                    <div class = "item box-shadow p-4 h-100 text-center">
+                                        <span class = "item-icon">
+                                            <i class="fa-solid fa-screwdriver-wrench"></i>
+                                        </span>
+                                        <h5 class = "item-title">Free Installation</h5>
+                                        <p class = "text mb-0">Get Free professional installation</p>
+                                    </div>
+                                </div>
+
+                                <div class = "col-md-6 col-lg-4 col-xl-3">
+                                    <div class = "item box-shadow p-4 h-100 text-center">
+                                        <span class = "item-icon">
+                                            <i class="fa-solid fa-car-battery"></i>
+                                        </span>
+                                        <h5 class = "item-title">100% Genuine Parts</h5>
+                                        <p class = "text">Country's Official Online Okaya Store</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- end of services section -->
+
+                <!-- hightlights -->
+                <section class = "highlights section-py bg-light-grey" id = "highlights">
+                    <div class = "container">
+                        <div class = "highlights-content">
+                            <div class = "section-title text-center mb-5">
+                                <h3>Highlights of our product</h3>
+                                <div class = "d-flex align-items-center justify-content-center mt-2 section-line">
+                                    <div class = "line"></div>
+                                    <span><i class="fa-solid fa-asterisk"></i></span>
+                                    <div class = "line"></div>
+                                </div>
+                            </div>
+                            <div class = "highlights-items">
+                                <div class = "item bg-white row align-items-center my-4 p-4 gy-4 gy-lg-0">
+                                    <div class = "col-left col-lg-6">
+                                        <img src = "assets/images/home_pg/product_img_1.jpg" alt = "">
+                                    </div>
+                                    <div class = "col-right col-lg-6">
+                                        <div class = "item-content">
+                                            <div class = "item-title text-uppercase">INVERTER BATTERIES</div>
+                                            <p class = "text mt-4">A superior quality is what distinguishes the extraordinary product from an ordinary one. All the inverter batteries may typically work the same but what makes Okaya batteries exceptional is its cutting edge technology, premier quality raw material and in-house manufacturing.</p>
+                                        </div>
+                                        <a href = '#' class = 'btn btn-outline-green-sm mt-1'>shop now <span class = "fs-14 ms-1"><i class="fa-solid fa-angles-right"></i></span></a>
+                                    </div>
+                                </div>
+
+                                <div class = "item row align-items-center my-4 p-4 gy-4 gy-lg-0">
+                                    <div class = "col-left col-lg-6 order-md-1">
+                                        <img src = "assets/images/home_pg/product_img_2.jpeg" alt = "">
+                                    </div>
+                                    <div class = "col-right col-lg-6">
+                                        <div class = "item-content">
+                                            <div class = "item-title text-uppercase">SMF BATTERIES</div>
+                                            <p class = "text mt-4">SMF (Sealed Maintenance Free) batteries also known as the Value Regulated Lead Acid (VRLA) batteries are the flat plate batteries that do not require topping-up and normally do not emit any fumes or gases on a continuous basis. They are completely sealed and therefore eliminate the risk of acid spillage during transportation. Due to their construction, it can be mounted in any orientation, and do not require constant maintenance. These are used for high end applications of standby power like UPS, Electric converter, Railway Communications, Security Systems etc.</p>
+                                        </div>
+                                        <a href = '#' class = 'btn btn-outline-green-sm mt-1'>shop now<span class = "fs-14 ms-1"><i class="fa-solid fa-angles-right"></i></span></a>
+                                    </div>
+                                </div>
+
+                                <div class = "item bg-white row align-items-center my-4 p-4 gy-4 gy-lg-0">
+                                    <div class = "col-left col-lg-6">
+                                        <img src = "assets/images/home_pg/product_img_3.jpeg" alt = "">
+                                    </div>
+                                    <div class = "col-right col-lg-6">
+                                        <div class = "item-content">
+                                            <div class = "item-title text-uppercase">E RICKSHAW BATTERIES</div>
+                                            <p class = "text mt-4">With the advent of E-Rickshaw, the demand for E-Rickshaw batteries has increased over time. E-Rickshaws are powered by E-Rickshaw batteries. These batteries are made for the specific application by E-Rickshaw and are not only required for starting the rickshaw but it also acts as a fuel
+                                     for the same.</p>    </div>
+                                        <a href = '#' class = 'btn btn-outline-green-sm mt-1'>shop now<span class = "fs-14 ms-1"><i class="fa-solid fa-angles-right"></i></span></a>
+                                    </div>
+                                </div>
+
+                                <div class = "item row align-items-center my-4 p-4 gy-4 gy-lg-0">
+                                    <div class = "col-left col-lg-6 order-md-1">
+                                        <img src = "assets/images/home_pg/product_img_4.jpeg" alt = "">
+                                    </div>
+                                    <div class = "col-right col-lg-6">
+                                        <div class = "item-content">
+                                            <div class = "item-title text-uppercase">SOLAR BATTERIES</div>
+                                            <p class = "text mt-4">Okaya Solar Tubular Batteries are specially designed to suit the rigors of daily charge discharge cycle at an high ambient temperature , work effectively in Partial State of charge ( PSOC) conditions where the battery will operate successfully even in consecutive non sunny days and are recharged at a fast pace and is very efficient in hybrid applications. It comes in 11 models which are differentiated based on the size and capacity of the batteries which range from 20 Ah to 200 Ah.</p>
+                                        </div>
+                                        <a href = '#' class = 'btn btn-outline-green-sm mt-1'>shop now<span class = "fs-14 ms-1"><i class="fa-solid fa-angles-right"></i></span></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- end of highlights -->
+
+                <!-- blog section -->
+                <section class = "blog section-py" id = "blog">
+                    <div class = "container">
+                        <div class = "blog-content">
+                            <div class = "section-title text-center mb-4">
+                                <h3>Our blogs</h3>
+                                <div class = "d-flex align-items-center justify-content-center mt-2 section-line">
+                                    <div class = "line"></div>
+                                    <span><i class="fa-solid fa-asterisk"></i></span>
+                                    <div class = "line"></div>
+                                </div>
+                            </div>
+                            <div class = "blog-items row py-4 gy-5">
+                                <div class = "col-lg-6 col-xl-4 px-0">
+                                    <div class = "card mx-3 box-shadow h-100">
+                                        <div class = "card-img img-cover">
+                                            <img src = "assets/images/blog_pg/blog_img_1.jpg" alt = "">
+                                        </div>
+                                        <div class = "card-body p-4">
+                                            <h5 class = "card-title"><a href = "#">Know the Reasons, Why You Need to Upgrade Your Inverter</a></h5>
+                                            <p class = "text">Today, inverters are a must-have in every household. Increased load shedding and power outages can hamper your work schedule and personal comfort, especially during summers.  </p>
+                                            <a href = "#" class = "btn btn-green mt-1">read more</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class = "col-lg-6 col-xl-4 px-0">
+                                    <div class = "card mx-3 box-shadow h-100">
+                                        <div class = "card-img img-cover">
+                                            <img src = "assets/images/blog_pg/blog_img_2.jpg" alt = "">
+                                        </div>
+                                        <div class = "card-body p-4">
+                                            <h5 class = "card-title"><a href = "#">Quick Buying Guide for Best Power Backup for Home</a></h5>
+                                            <p class = "text">A reliable power backup system does not just provide long power backup but it also ensures that it supports all connected appliance appropriately so as there is no hindrance in the daily life.</p>
+                                            <a href = "#" class = "btn btn-green mt-1">read more</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class = "col-lg-6 col-xl-4 px-0">
+                                    <div class = "card mx-3 box-shadow h-100">
+                                        <div class = "card-img img-cover">
+                                            <img src = "assets/images/blog_pg/blog_img_3.jpg" alt = "">
+                                        </div>
+                                        <div class = "card-body p-4">
+                                            <h5 class = "card-title"><a href = "#">Know the Reasons, Why You Need to Upgrade Your Inverter</a></h5>
+                                            <p class = "text">Power outages and voltage fluctuations have been two constant issues of our lives, and now they are affecting our way of living and high-maintenance lifestyle.</p>
+                                            <a href = "#" class = "btn btn-green mt-1">read more</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- end of blog section -->
+            </main>
+
+            <footer class = "footer bg-dark-grey py-3" id = "footer">
+                <div class = "container">
+                    <div class = "footer-content">
+                        <p class = "text-footer mb-0 text-center text-white">All rights reserved &copy; <span>Team Sinergy Nepal </span>2022</p>
+                    </div>
+                </div>
+            </footer>
+        </div>
+
+
+
+
+        <!-- scripts -->
+        <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js" integrity="sha512-gY25nC63ddE0LcLPhxUJGFxa2GoIyA5FLym4UJqHDEMHjp8RET6Zn/SHo1sltt3WuVtqfyxECP38/daUc/WVEA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src = "js/script.js"></script>
+    </body>
+</html>

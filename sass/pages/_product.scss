@@ -1,0 +1,116 @@
+.pg-product{
+    .header-content{
+        background: linear-gradient(black(0.6), black(0.9)), url("../../assets/images/banner_img.jpg") center/cover no-repeat;
+        height: 250px;
+    }
+
+    .products{
+        .products-listing{
+            .item{
+                &-img{
+                    height: 200px;
+                    overflow: hidden;
+                }
+                .img-cover{
+                    width: 75%;
+                    margin-right: auto;
+                    margin-left: auto;
+                }
+                &-title{
+                    &:hover{
+                        h6{
+                            text-decoration: underline;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.pg-product-single{
+    .product-single-content{
+        padding-left: 32px!important;
+        padding-right: 32px!important;
+        .col-right{
+            .text{
+                font-size: 15px;
+                line-height: 1.7;
+            }
+            .item-info{
+                .item-info-icon{
+                    color: $clr-green;
+                    border: border($clr-green);
+                    @include size(30px);
+                    display: inline-block;
+                    border-radius: 50%;
+                    @include flexCenter;
+                }
+            }
+
+            @include breakpoint-up(lg){
+                border-left: border($clr-light-grey, 2px);
+            }
+        }
+
+        .col-left{
+            .item-img-collection{
+                &-single{
+                    border: border(black(0.1));
+                    width: 120px;
+                    cursor: pointer;
+                    margin: 0 3px;
+                    @include transition-ease;
+
+                    &:hover{
+                        @include boxShadow;
+                    }
+                }
+            }
+
+            #lg-image-display{
+                height: 500px;
+            }
+        }
+    }
+
+    .product-single-tabs{
+        padding-left: 32px!important;
+        padding-right: 32px!important;
+        border-top: border($clr-green, 3px);
+        
+        .nav-tabs{
+            .nav-link{
+                &:hover, &.active{
+                    color: $clr-green;
+                }
+            }
+        }
+
+        .tab-content{
+            .item-list{
+                .item-single{
+                    .item-single-icon{
+                        font-size: 25px;
+                    }
+                }
+            }
+
+            .review-list{
+                .review-item{
+                    padding: 12px 17px;
+                    background-color: black(0.01);
+                    border-radius: 4px;
+                }
+            }
+
+            .review-form{
+                max-width: 600px;
+            }
+        }
+    }
+}
+
+.zoomContainer{
+    width: 100%;
+}

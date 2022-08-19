@@ -1,0 +1,21 @@
+// google fonts
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+// abstracts
+@import 'abstracts/functions';
+@import 'abstracts/variables';
+@import 'abstracts/globals';
+@import 'abstracts/mixins';
+// base
+@import 'base/reset';
+@import 'base/utilities';
+// layout
+@import 'layout/header';
+@import 'layout/navbar';
+@import 'layout/footer';
+// pages
+@import 'pages/home';
+@import 'pages/product';
+@import 'pages/blog';
+@import 'pages/contact';
+@import 'pages/category';

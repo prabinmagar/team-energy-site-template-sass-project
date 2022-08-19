@@ -1,0 +1,9 @@
+html{
+    scroll-behavior: smooth;
+}
+body{
+    min-height: 100vh;
+    line-height: 1.5;
+    font-family: $fnt-base!important;
+    color: $clr-black;
+}

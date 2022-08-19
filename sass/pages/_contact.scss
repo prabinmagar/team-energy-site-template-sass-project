@@ -1,0 +1,44 @@
+.pg-contact{
+    .contact{
+        &-content{
+            .item-info{
+                .item-info-icon{
+                    color: $clr-white;
+                    background-color: $clr-green;
+                    border: border($clr-green);
+                    @include size(30px);
+                    display: inline-block;
+                    border-radius: 50%;
+                    @include flexCenter;
+                }
+            }
+
+            .col-left{
+                color: $clr-white;
+                outline: 1px solid $clr-light-grey;
+                outline-offset: -7px;
+                padding: 36px 32px; 
+
+                .item-info{
+                    span{
+                        &:last-of-type{
+                            opacity: 0.8;
+                        }
+                    }
+                }
+            }
+
+            .col-right{
+                .form-control{
+                    border-radius: 0;
+                    background-color: $clr-light-grey;
+                    border-color: black(0.1);
+                }
+                .form-label{
+                    opacity: 0.8;
+                    font-size: 16.5px;
+                }
+            }
+        }
+    }
+}

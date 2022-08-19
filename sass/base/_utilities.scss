@@ -1,0 +1,217 @@
+.text-green{color: $clr-green;}
+.text-red{color: $clr-red;}
+.text-white{color: $clr-white;}
+.text-black{color: $clr-black;}
+.text-dark-grey{color: $clr-dark-grey;}
+
+// font weights
+.fw-1{font-weight: 100;}
+.fw-3{font-weight: 300;}
+.fw-4{font-weight: 400;}
+.fw-7{font-weight: 700;}
+.fw-9{font-weight: 900;}
+
+// font sizes
+.fs-11{font-size: 11px;}
+.fs-12{font-size: 12px;}
+.fs-13{font-size: 13px;}
+.fs-14{font-size: 14px;}
+.fs-15{font-size: 15px;}
+.fs-16{font-size: 16px;}
+.fs-17{font-size: 17px;}
+.fs-18{font-size: 18px;}
+.fs-19{font-size: 19px;}
+.fs-20{font-size: 20px;}
+.fs-21{font-size: 21px;}
+.fs-22{font-size: 22px;}
+.fs-23{font-size: 23px;}
+.fs-24{font-size: 24px;}
+.fs-25{font-size: 25px;}
+.fs-26{font-size: 26px;}
+
+// letter spacing
+.ls-1{letter-spacing: 1px;}
+.ls-2{letter-spacing: 2px;}
+
+// backgrounds
+.bg-transparent{background-color: transparent;}
+.bg-white{background-color: $clr-white;}
+.bg-black{background-color: $clr-black;}
+.bg-green{background-color: $clr-green;}
+.bg-red{background-color: $clr-red;}
+.bg-dark-grey{background-color: $clr-dark-grey;}
+.bg-light-grey{background-color: $clr-light-grey;}
+
+// image
+.img-cover img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+// opacity
+.op-09{opacity: 0.9;}
+.op-08{opacity: 0.8;}
+.op-07{opacity: 0.7;}
+.op-06{opacity: 0.6;}
+.op-05{opacity: 0.5;}
+.op-04{opacity: 0.4;}
+.op-03{opacity: 0.3;}
+.op-02{opacity: 0.2;}
+.op-01{opacity: 0.1;}
+
+// sections
+.section-title{
+    padding: 10px 0;
+    text-transform: capitalize;
+    h3{
+        margin: 0;
+        font-size: 24px;
+        letter-spacing: 1px;
+        font-weight: 700;
+        opacity: 0.9;
+    }
+
+    @include breakpoint-up(md){
+        h3{
+            font-size: 28px;
+        }
+    }
+    
+    @include breakpoint-up(xl){
+        h3{
+            font-size: 32px;
+        }
+    }
+
+    .section-line{
+        .line{
+            height: 2.5px;
+            width: 80px;
+            background-color: $clr-green;
+            margin: 0 15px;
+        }
+        span{
+            color: $clr-green;
+            font-size: 10px;
+        }
+    }
+}
+.section-py{
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+// text
+.text{
+    font-size: 16.5px;
+    letter-spacing: 0.5px;
+    opacity: 0.8;
+    line-height: 27px;
+
+    &-sm{
+        @extend .text;
+        font-size: 15px;
+        line-height: 1.6;
+    }
+}
+
+// box shadow
+.box-shadow{
+    @include boxShadow;
+}
+
+// buttons
+.btn{
+    border-radius: 0;
+    text-transform: capitalize;
+    font-size: 17px;
+    padding: 9px 24px;
+    border-radius: 3px;
+
+    &-green{
+        background-color: $clr-green;
+        @include btn-shared;
+
+        &:hover{
+            color: $clr-white!important;
+            background-color: #4ab848;
+        }
+    }
+
+    &-red{
+        background-color: $clr-red;
+        @include btn-shared;
+
+        &:hover{
+            color: $clr-white;
+            background-color: #ef3a42;
+        }
+    }
+
+    &-dark-grey{
+        background-color: $clr-dark-grey;
+        @include btn-shared;
+
+        &:hover{
+            color: $clr-white!important;
+        }
+    }
+}
+.btn-outline-green{
+    color: $clr-white;
+    outline: 2px solid $clr-green;
+    outline-offset: -2px;
+    color: $clr-green;
+    position: relative;
+    @include transition-ease;
+
+    &::after{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 0;
+        height: 100%;
+        background-color: $clr-green;
+        @include transition-ease;
+        z-index: -1;
+    }
+
+    &:hover{
+        color: $clr-white!important;
+        &::after{
+            width: 100%;
+        }
+    }
+}
+
+.btn-outline-green-sm{
+    @extend .btn-outline-green;
+    padding: 6.5px 24px;
+}
+
+// items
+.item-title{
+    margin: 10px 0;
+    font-weight: 700;
+    padding-bottom: 10px;
+}
+
+// card
+
+.card{
+    border: none;
+
+    &-img{
+        height: 280px;
+        overflow: hidden;
+        border-radius: 0;
+    }
+    &-title{
+        font-weight: 700;
+        font-size: 18px;
+        margin-bottom: 12px;
+        line-height: 1.4;
+    }
+}

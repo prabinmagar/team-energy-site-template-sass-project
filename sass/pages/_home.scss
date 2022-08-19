@@ -1,0 +1,95 @@
+.header-content{
+    z-index: -1!important;
+    padding-bottom: 40px;
+    overflow: hidden;
+
+    .home-slider{
+        position: relative;
+        .owl-dots{
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+
+            @include breakpoint-up(xl){
+                bottom: 120px;
+            }
+        }
+    }
+    
+}
+
+.about{
+    .about-content{
+        .col-left{
+            img{
+                max-width: 400px;
+            }
+        }
+    }
+}
+.services{
+    .services-content{
+        .item{
+            border-radius: 4px;
+            @include transition-ease;
+
+            .item-icon{
+                font-size: 40px;
+            }
+
+            &:hover{
+                background-color: $clr-green;
+                color: $clr-white;
+            }
+        }
+    }
+}
+
+.highlights{
+    .highlights-content{
+        .item{
+            border: border($clr-light-grey, 2px);
+            .item-title{
+                font-size: 18px;
+                position: relative;
+                &::after{
+                    position: absolute;
+                    content: "";
+                    top: 100%;
+                    left: 0;
+                    @include size(150px, 2px);
+                    background-color: $clr-green;
+                }
+            }
+            .col-left{
+                img{
+                    max-width: 500px;
+                }
+            }
+
+            &:nth-child(even){
+                background-color: $clr-green;
+                color: $clr-white;
+                .item-title{
+                    &::after{
+                        background-color: $clr-white;
+                    }
+                }
+
+                .btn-outline-green{
+                    color: $clr-white;
+                    outline-color: $clr-white;
+
+                    &::after{
+                        background-color: $clr-white;
+                    }
+
+                    &:hover{
+                        color: $clr-green!important;
+                    }
+                }
+            }
+        }
+    }
+}
